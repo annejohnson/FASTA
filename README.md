@@ -8,7 +8,7 @@ Add `FASTA` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:fasta, "~> 0.0.1"}]
+  [{:fasta, "~> 0.1.0"}]
 end
 ```
 
