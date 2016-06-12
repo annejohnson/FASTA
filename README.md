@@ -1,4 +1,4 @@
-# FASTA
+# FASTA [![Hex.pm](https://img.shields.io/hexpm/v/fasta.svg?style=flat-square)](https://hex.pm/packages/fasta)
 
 This is a tool for parsing [FASTA](https://en.wikipedia.org/wiki/FASTA_format) strings into structured sequence data.
 
@@ -26,6 +26,8 @@ iex> fasta_string = "> locus6 | Gorilla gorilla
   %FASTA.Datum{header: "locus7 | Gorilla gorilla", sequence: "TGGGCTGCTATGCGGATGCAGAT"}
 ]
 ```
+
+[View full documentation here](https://hexdocs.pm/fasta/api-reference.html).
 
 ## Contributing
 
