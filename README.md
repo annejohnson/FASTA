@@ -1,6 +1,6 @@
 # FASTA
 
-This is a tool for parsing FASTA strings into structured sequence data.
+This is a tool for parsing [FASTA](https://en.wikipedia.org/wiki/FASTA_format) strings into structured sequence data.
 
 ## Installation
 
