@@ -36,9 +36,15 @@ defmodule FASTAParserTest do
   end
 
   test "parse returns an empty list of data from an invalid fasta string" do
-    raw_invalid_fasta = "> #{header1}\n> #{header2}"
-    fasta_data = FASTA.Parser.parse(raw_invalid_fasta)
+    raw_invalid_fastas = [
+      "> #{header1}\n> #{header2}",
+      "<!DOCTYPE html>\n<html>\n</html>"
+    ]
 
-    assert(Enum.empty?(fasta_data))
+    Enum.map(raw_invalid_fastas, fn(raw_invalid_fasta) ->
+      fasta_data = FASTA.Parser.parse(raw_invalid_fasta)
+
+      assert(Enum.empty?(fasta_data))
+    end)
   end
 end
